@@ -22,8 +22,6 @@
                     <h5 class="card-title">{{ $producto->nombre }}</h5>
                     <p class="card-text">{{ \Str::limit($producto->descripcion, 60) }}</p>
                     <p class="card-text"><strong>{{ number_format($producto->precio, 2, ',', '.') }}€</strong></p>
-                    <!--<a href="{{ route('productos.store', $producto->id) }}" class="btn btn-primary btn-sm">Añadir al carrito</a>
-                    -->
                 </div>
             </div>
         </div>
