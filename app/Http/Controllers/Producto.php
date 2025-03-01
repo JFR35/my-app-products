@@ -12,7 +12,7 @@ class Producto extends Controller
         $query = $request->input('search');
 
         if ($query) {
-            $productos = ProductoModel::where('nombre_producto', 'LIKE', "%$query%")
+            $productos = ProductoModel::where('nombre', 'LIKE', "%$query%")
                 ->orWhere('descripcion', 'LIKE', "%$query%")
                 ->get();
         } else {

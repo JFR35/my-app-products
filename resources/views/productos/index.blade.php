@@ -4,7 +4,8 @@
 
 @section('content')
 <!-- Formulario de búsqueda -->
-<form action="{{ route('productos.index') }}" method="GET" class="mb-4">
+<form action="{{ route('productos.index') }}" method="GET" class="mb-4" id="form-buscar">
+    @csrf
     <div class="input-group">
         <input type="text" name="search" placeholder="Buscar productos..." value="{{ $query ?? '' }}" class="form-control form-control-lg" aria-label="Buscar producto">
         <button type="submit" class="btn btn-primary btn-lg">Buscar Producto</button>
@@ -32,5 +33,8 @@
         </div>
     @endforelse
 </div>
-
+<!--Añadir scripts de javascript-->
+@push('scripts')
+    @vite('resources/js/app.js')
+@endpush
 @endsection

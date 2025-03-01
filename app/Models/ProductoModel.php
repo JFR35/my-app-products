@@ -16,8 +16,10 @@ class ProductoModel extends Model
         'categoria_id',
     ];
 
+    /*
     public function categoria()
     {
         return $this->belongsTo(CategoriaModel::class);
     }
+    */
 }
