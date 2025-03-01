@@ -17,7 +17,6 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="{{ route('productos.index') }}">Volver a Productos</a>
                 </li>
-            -->
                 {{-- Si el usuario está autenticado, mostrar el enlace para cerrar sesión 
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('sesion.index') }}">Iniciar Sesión</a>
