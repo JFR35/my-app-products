@@ -12,7 +12,7 @@
 </form>
 
 <!-- Productos -->
-<div class="row">
+<div class="row" id="productos">
     @forelse ($productos as $producto)
         <div class="col-md-4 mb-4">
             <div class="card">
@@ -22,6 +22,7 @@
                     <h5 class="card-title">{{ $producto->nombre }}</h5>
                     <p class="card-text">{{ \Str::limit($producto->descripcion, 60) }}</p>
                     <p class="card-text"><strong>{{ number_format($producto->precio, 2, ',', '.') }}€</strong></p>
+                    <a href="{{ route('productos.show', $producto) }}" class="btn btn-primary">Ver producto</a>
                 </div>
             </div>
         </div>

@@ -1,81 +1,72 @@
-/* index.css o navbar-footer.css */
-
 body {
-    background-image: url('/public/img/vistainicial.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
+    background-color: #f0f0f0; /* Gris claro neutro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; /* Elimina el margen predeterminado del body */
 }
 
 /* Navbar */
 .navbar {
-    background: linear-gradient(to right, #1a237e, #3f51b5); /* Azul oscuro moderno */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 1.5rem 2rem; /* Reducir el padding */
+    background: #ffffff; /* Blanco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem; /* Espaciado reducido */
 }
 
 .navbar-brand {
-    font-weight: 600; /* Semibold */
-    color: white !important;
-    font-size: 2.5rem; /* Tamaño más grande */
+    font-weight: 600;
+    color: #333; /* Gris oscuro */
+    font-size: 1.5rem;
 }
 
 .navbar-nav .nav-link {
-    color: white !important;
-    margin-left: 20px;
-    transition: color 0.3s ease, transform 0.3s ease; /* Transición para el color y la transformación */
+    color: #333;
+    margin-left: 15px;
+    transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #bbdefb !important; /* Azul claro al pasar el ratón */
-    transform: translateY(-2px); /* Ligero efecto de elevación */
+    color: #007bff; /* Azul al pasar el ratón */
 }
 
 /* Footer */
 footer {
-    background: #263238; /* Gris oscuro */
-    color: #b0bec5; /* Gris claro */
-    padding: 3rem 2rem;
+    background: #e0e0e0; /* Gris claro */
+    color: #555; /* Gris */
+    padding: 2rem 2rem;
     text-align: center;
-    border-top: 1px solid #37474f;
+    border-top: 1px solid #ccc;
+    margin-top: 3rem; /* Espacio superior */
 }
 
 footer p {
     margin-bottom: 0;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 /* Contenedor principal */
 .container {
-    min-height: calc(100vh - 200px); /* Ajusta según la altura del navbar y footer */
-    display: flex;
-    flex-direction: column;
     padding: 2rem;
+    max-width: 1200px; /* Ancho máximo para el contenido */
+    margin: 0 auto; /* Centra el contenido */
 }
 
-.container > div:first-child {
-    flex-grow: 1;
-}
-
-/* Estilos adicionales para e-commerce */
+/* Estilos adicionales para e-commerce (puedes ajustarlos según tus preferencias) */
 .btn-primary {
-    background-color: #009688; /* Verde teal */
-    border-color: #009688;
+    background-color: #007bff;
+    border-color: #007bff;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #00796b; /* Verde teal más oscuro */
-    border-color: #00796b;
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
 
 .card {
-    border: 1px solid #e0e0e0;
+    border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
+    margin-bottom: 1.5rem; /* Espacio entre tarjetas */
 }
 
 .card:hover {
