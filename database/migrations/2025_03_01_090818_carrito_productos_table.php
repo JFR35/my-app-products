@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('carrito_id');
             $table->foreign('carrito_id')->references('id')->on('carrito')->onDelete('cascade');
+            $table->unsignedBigInteger('producto_id'); // Agrega la columna producto_id
+            $table->foreign('producto_id')->references('id')->on('productos')->onDelete('cascade'); // Clave foránea a productos
             $table->integer('cantidad');
             $table->decimal('precio', 8, 2);
             $table->dateTime('fecha_adicion');

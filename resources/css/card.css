@@ -1,0 +1,20 @@
+input[name="cantidad"] {
+    padding: 0.375rem 0.75rem; /* Ajusta el padding para que coincida con Bootstrap */
+    font-size: 1rem; /* Ajusta el tamaño de la fuente */
+    line-height: 1.5; /* Ajusta la altura de la línea */
+    color: #495057; /* Ajusta el color del texto */
+    background-color: #fff; /* Ajusta el color de fondo */
+    background-clip: padding-box;
+    border: 1px solid #ced4da; /* Ajusta el borde */
+    border-radius: 0.25rem; /* Ajusta el radio del borde */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    width: 80px; /* Ajusta el ancho */
+}
+
+input[name="cantidad"]:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
