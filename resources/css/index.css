@@ -1,0 +1,74 @@
+body {
+    background-color: #f0f0f0; /* Gris claro neutro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; /* Elimina el margen predeterminado del body */
+}
+
+/* Navbar */
+.navbar {
+    background: #ffffff; /* Blanco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem; /* Espaciado reducido */
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #333; /* Gris oscuro */
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Azul al pasar el ratón */
+}
+
+/* Footer */
+footer {
+    background: #e0e0e0; /* Gris claro */
+    color: #555; /* Gris */
+    padding: 2rem 2rem;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: 3rem; /* Espacio superior */
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+/* Contenedor principal */
+.container {
+    padding: 2rem;
+    max-width: 1200px; /* Ancho máximo para el contenido */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+/* Estilos adicionales para e-commerce (puedes ajustarlos según tus preferencias) */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 1.5rem; /* Espacio entre tarjetas */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}

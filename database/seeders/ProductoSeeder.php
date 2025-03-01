@@ -19,7 +19,7 @@ class ProductoSeeder extends Seeder
             'descripcion' => 'Delicioso café de Colombia',
             'precio' => 10.00,
             'stock' => 10,
-            'imagen' => 'img/cafes/cafecolombia.webp',
+            'imagen' => 'img/cafe/cafecolombia.webp',
             'categoria_id' => 1,
             ],
             [
@@ -27,7 +27,7 @@ class ProductoSeeder extends Seeder
             'descripcion' => 'Delicioso café de Etiopía',
             'precio' => 12.00,
             'stock' => 10,
-            'imagen' => 'img/cafes/cafeetiopia.webp',
+            'imagen' => 'img/cafe/cafecolombia.webp',
             'categoria_id' => 1,
             ],
             [    
@@ -35,7 +35,7 @@ class ProductoSeeder extends Seeder
             'descripcion' => 'Delicioso café de Jamaica',
             'precio' => 15.00,
             'stock' => 10,
-            'imagen' => 'img/cafes/cafejamaica.webp',
+            'imagen' => 'img/cafe/cafecolombia.webp',
             'categoria_id' => 1,
             ],
             [ 
@@ -43,7 +43,7 @@ class ProductoSeeder extends Seeder
             'descripcion' => 'Delicioso café de Kenia',
             'precio' => 13.00,
             'stock' => 10,
-            'imagen' => 'img/cafes/cafekenia.webp',
+            'imagen' => 'img/cafe/cafecolombia.webp',
             'categoria_id' => 1,
             ],
             [
@@ -51,7 +51,7 @@ class ProductoSeeder extends Seeder
             'descripcion' => 'Delicioso café de Brasil',
             'precio' => 11.00,
             'stock' => 10,
-            'imagen' => 'img/cafes/cafebrasil.webp',
+            'imagen' => 'img/cafe/cafecolombia.webp',
             'categoria_id' => 1,
             ],
             [
@@ -59,7 +59,7 @@ class ProductoSeeder extends Seeder
             'descripcion' => 'Delicioso café de Costa Rica',
             'precio' => 14.00,
             'stock' => 10,      
-            'imagen' => 'img/cafes/cafecostarica.webp',
+            'imagen' => 'img/cafe/cafecolombia.webp',
             'categoria_id' => 1,
             ],
         ]);
