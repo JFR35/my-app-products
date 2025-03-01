@@ -1,6 +1,6 @@
 
 
-
+// Validar que el campo de búsqueda no esté vacío
 document.addEventListener('DOMContentLoaded', function() {
     const formBuscar = document.getElementById('form-buscar');
     if (formBuscar) { 

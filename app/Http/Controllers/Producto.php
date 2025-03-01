@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class Producto extends Controller
 {
+    // Funcion para mostrar todos los productos y el buscador de productos
     public function index(Request $request)
     {
         $query = $request->input('search');
@@ -23,6 +24,7 @@ class Producto extends Controller
     }
 
 
+    // Funcion para mostrar un producto en detalle
     public function show($id)
     {
         $producto = ProductoModel::findOrFail($id);
