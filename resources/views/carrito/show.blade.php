@@ -22,7 +22,12 @@
                         <td>{{ number_format($detalle->precio, 2, ',', '.') }}€</td>
                         <td>{{ number_format($detalle->pivot->cantidad * $detalle->precio, 2, ',', '.') }}€</td>
                         <td>
-                            <button class="btn btn-sm btn-danger">Eliminar</button>
+                            <form action="{{ route('carrito.eliminar') }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <input type="hidden" name="producto_id" value="{{ $detalle->id }}">
+                                <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
+                            </form>
                         </td>
                     </tr>
                 @endforeach

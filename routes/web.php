@@ -10,3 +10,4 @@ Route::get('/productos/{id}', [Producto::class, 'show'])->name('productos.show')
 
 Route::post('/carrito/agregar', [CarritoController::class, 'agregar'])->name('carrito.agregar');
 Route::get('/carrito/show', [CarritoController::class, 'show'])->name('carrito.show');
+Route::delete('/carrito/eliminar', [CarritoController::class, 'eliminar'])->name('carrito.eliminar'); // Agrega esta línea

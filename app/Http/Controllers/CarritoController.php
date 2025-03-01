@@ -35,5 +35,14 @@ class CarritoController extends Controller
         return view('carrito.show', compact('detalles'));
     }
 
+    // Eliminar un producto del carrito de compras
+    public function eliminar(Request $request)
+    {
+        $productoId = $request->input('producto_id');
+        $carrito = CarritoModel::first();
+        $carrito->productos()->detach($productoId);
+        return redirect()->route('carrito.show');
+    }
+
 
 }
