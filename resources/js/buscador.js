@@ -13,3 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const limpiarBoton = document.querySelector('#form-buscar .btn-secondary');
+    if (limpiarBoton) {
+        limpiarBoton.addEventListener('click', function() {
+            document.querySelector('input[name="search"]').value = '';
+        });
+    }
+});

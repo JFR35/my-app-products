@@ -1,12 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+   
     <form action="{{ route('productos.index') }}" method="GET" class="mb-4" id="form-buscar">
         @csrf
         <div class="input-group">
-            <input type="text" name="search" placeholder="Buscar productos..." value="{{ $query ?? '' }}" class="form-control form-control-lg" aria-label="Buscar producto">
-            <button type="submit" class="btn btn-primary btn-lg">Buscar Producto</button>
-            <button type="button" class="btn btn-secondary btn-lg" onclick="document.querySelector('input[name=\'search\']').value = '';">Limpiar</button>
+            <input type="text" name="search" placeholder="Buscar productos..." value="{{ $query ?? '' }}" class="form-control form-control-sm" aria-label="Buscar producto">
+            <button type="submit" class="btn btn-primary btn-sm">
+                <i class="bi bi-search"></i> </button>
+            <button type="button" class="btn btn-secondary btn-sm" = '';">Limpiar</button>
         </div>
     </form>
 
@@ -35,7 +37,7 @@
             </div>
         @empty
             <div class="col-12 text-center">
-                <p>No hay productos disponibles.</p>
+                <p>No hay productos disponibles.</p> 
             </div>
         @endforelse
     </div>
