@@ -21,7 +21,7 @@
                             <input type="number" name="cantidad" value="1" min="1" class="form-control me-2" style="width: 80px;">
                             <button type="submit" class="btn btn-success">Agregar al carrito</button>
                         </form>
-                        <a href="{{ route('productos.index') }}" class="btn btn-secondary">Volver a la lista</a>
+                        <a href="{{ route('productos.index') }}" class="btn btn-secondary">Volver a la lista de productos</a>
                     </div>
                 </div>
             </div>

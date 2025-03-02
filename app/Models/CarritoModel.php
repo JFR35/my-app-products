@@ -15,7 +15,7 @@ class CarritoModel extends Model
     // Relación uno a muchos
     public function productos()
     {
-        return $this->belongsToMany(ProductoModel::class, 'carrito_productos', 'carrito_id', 'producto_id') // Usa id_producto
+        return $this->belongsToMany(ProductoModel::class, 'carrito_productos', 'carrito_id', 'producto_id') 
                     ->withPivot('cantidad', 'precio', 'fecha_adicion');
     }
 }

@@ -38,6 +38,8 @@
             return $detalle->pivot->cantidad * $detalle->precio;
         }), 2, ',', '.') }}€</p>
         <button class="btn btn-success">Finalizar compra</button>
+
+        <a href="{{ route('productos.index') }}" class="btn btn-secondary">Volver a la lista de productos</a>
     @else
         <p>El carrito está vacío.</p>
     @endif

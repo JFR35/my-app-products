@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi app de bebidas - @yield('title', 'Página principal')</title>
+    <!--Ajustar la descripción y las palabras clave de la página-->
     <meta name="description" content="@yield('description', 'Descripción de la página')">
     <meta name="keywords" content="@yield('keywords', 'palabras clave')">
     @vite('resources/css/app.css')
@@ -44,7 +45,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h5>Sobre nosotros</h5>
-                    <p>Información sobre tu empresa o aplicación.</p>
+                    <p>Venta online de productos.</p>
                 </div>
                 <div class="col-md-3">
                     <h5>Enlaces útiles</h5>
