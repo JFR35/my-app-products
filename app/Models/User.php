@@ -47,6 +47,7 @@ class User extends Authenticatable
         ];
     }
 
+    // Relacion con roles 1 rol pertenece a un 1 usuario
     public function role()
     {
         return $this->belongsTo(Role::class);

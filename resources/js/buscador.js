@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Limpiar la busqueda
 document.addEventListener('DOMContentLoaded', function() {
     const limpiarBoton = document.querySelector('#form-buscar .btn-secondary');
     if (limpiarBoton) {
