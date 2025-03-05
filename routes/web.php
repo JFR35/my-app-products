@@ -17,3 +17,5 @@ Route::prefix('carrito')->group(function () {
     Route::get('/show', [CarritoController::class, 'show'])->name('carrito.show');
     Route::delete('/eliminar', [CarritoController::class, 'eliminar'])->name('carrito.eliminar');
 });
+
+// Este es un comentario para borrar y probar la PULL REQUEST
